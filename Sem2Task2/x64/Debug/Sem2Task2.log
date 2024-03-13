@@ -1,0 +1,7 @@
+﻿  calculation.c
+C:\Users\Александр\Desktop\C++ stuff\Sem2Task2\calculation.c(24,67): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\Sem2Task2\calculation.c(25,67): warning C4244: инициализация: преобразование "double" в "LONG", возможна потеря данных
+  main.c
+  painter.c
+  Создание кода...
+  Sem2Task2.vcxproj -> C:\Users\Александр\Desktop\C++ stuff\Sem2Task2\x64\Debug\Sem2Task2.exe
