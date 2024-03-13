@@ -1,0 +1,26 @@
+MenuBegin
+WindowBegin
+	Position=(0,0)
+	Color=(255, 255, 255)
+	Id=228
+WindowEnd
+WindowBegin
+	Position=(50,50)
+	Color=(255, 255, 255)
+	Id=1337
+WindowEnd
+ButtonBegin
+	Position=(2,2)
+	Color=(232, 223, 223)
+	HiglightColor=(255, 0, 0)
+	Name=PressMe!
+	WindowId=228
+ButtonEnd
+ButtonBegin
+	Position=(200,200)
+	Color=(232, 223, 223)
+	HiglightColor=(255, 0, 0)
+	Name=DoNotPressMe!
+	WindowId=228
+ButtonEnd
+MenuEnd
