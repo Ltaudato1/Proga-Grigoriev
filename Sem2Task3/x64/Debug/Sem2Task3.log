@@ -1,3 +1,7 @@
 ﻿  invoker.c
-C:\Users\Александр\Desktop\C++ stuff\Sem2Task3\invoker.c(108,13): warning C4013: drawAlign: нет определения; предполагается "extern" с возвратом типа "int"
-  Sem2Task3.vcxproj -> C:\Users\Александр\Desktop\C++ stuff\Sem2Task3\x64\Debug\Sem2Task3.exe
+  main.c
+  painter.c
+  Создание кода...
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task3\main.c(31): warning C4715: WindowProc: значение возвращается не при всех путях выполнения
+  LINK : не найден или не выполнена сборка C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task3\x64\Debug\Sem2Task3.exe при последней инкрементной компоновке; выполняется полная компоновка
+  Sem2Task3.vcxproj -> C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task3\x64\Debug\Sem2Task3.exe

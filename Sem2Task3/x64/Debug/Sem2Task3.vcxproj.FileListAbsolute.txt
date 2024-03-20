@@ -1,1 +1,2 @@
 C:\Users\Александр\Desktop\C++ stuff\Sem2Task3\x64\Debug\Sem2Task3.exe
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task3\x64\Debug\Sem2Task3.exe
