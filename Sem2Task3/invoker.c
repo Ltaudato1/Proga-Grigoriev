@@ -80,14 +80,14 @@ void paint(HINSTANCE hInstance, int nCmdShow) {
 
         PAINTSTRUCT ps;
         HDC hdc = BeginPaint(menu.windows[i].hwnd, &ps);
-        for (int i = 0; i < menu.buttonsCounter; ++i) {
-            if (menu.buttons[i].windowId == menu.windows[i].id) {
-                menu.buttons[i].hwnd = CreateWindowA(
+        for (int j = 0; j < menu.buttonsCounter; ++j) {
+            if (menu.buttons[j].windowId == menu.windows[i].id) {
+                menu.buttons[j].hwnd = CreateWindowA(
                     "Button",                          // Predefined class; Unicode assumed 
-                    menu.buttons[i].name,                   // Button text 
+                    menu.buttons[j].name,                   // Button text 
                     WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,  // Styles 
-                    menu.buttons[i].position.x,             // x position 
-                    menu.buttons[i].position.y,             // y position 
+                    menu.buttons[j].position.x,             // x position 
+                    menu.buttons[j].position.y,             // y position 
                     100,                                // Button width
                     100,                                // Button height
                     menu.windows[i].hwnd,                       // Parent window
