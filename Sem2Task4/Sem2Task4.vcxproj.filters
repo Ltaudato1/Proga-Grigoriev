@@ -13,27 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\menu">
+      <UniqueIdentifier>{1548c216-ab19-4bdd-bddf-e6cb26fc8121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\game">
+      <UniqueIdentifier>{775ddfec-4dbc-4e6f-a949-f6a77fc82e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\game\include">
+      <UniqueIdentifier>{6ca354ac-cfd7-40df-9ae8-090a3a7e1be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\game\src">
+      <UniqueIdentifier>{fbf72c4e-c72d-4886-92ea-b52319f26d6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>Исходные файлы\game\src</Filter>
+    </ClCompile>
+    <ClCompile Include="level.c">
+      <Filter>Исходные файлы\game\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ball.h">
-      <Filter>Исходные файлы</Filter>
+    <ClInclude Include="bonus.h">
+      <Filter>Исходные файлы\game\include</Filter>
     </ClInclude>
     <ClInclude Include="general.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="player.h">
-      <Filter>Исходные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="bonus.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\game\include</Filter>
     </ClInclude>
     <ClInclude Include="level.h">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\game\include</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Исходные файлы\game\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

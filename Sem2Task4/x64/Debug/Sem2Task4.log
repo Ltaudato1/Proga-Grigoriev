@@ -1,3 +1,12 @@
-﻿  main.c
-C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\main.c(4,12): warning C4026: функция объявлена со списком формальных параметров
+﻿  level.c
+  main.c
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\main.c(5,12): warning C4026: функция объявлена со списком формальных параметров
+  player.c
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(35,44): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(35,63): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(35,73): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(35,87): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(107,41): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(108,45): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  Создание кода...
   Sem2Task4.vcxproj -> C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\x64\Debug\Sem2Task4.exe

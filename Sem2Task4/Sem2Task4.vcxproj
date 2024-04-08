@@ -132,10 +132,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="level.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="player.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ball.h" />
     <ClInclude Include="bonus.h" />
     <ClInclude Include="general.h" />
     <ClInclude Include="level.h" />
