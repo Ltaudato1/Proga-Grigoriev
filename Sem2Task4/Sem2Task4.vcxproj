@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bonus.c" />
     <ClCompile Include="level.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="player.c" />

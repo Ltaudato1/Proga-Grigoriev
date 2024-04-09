@@ -4,6 +4,7 @@
 #define PLAYER_H
 
 #include "general.h"
+#include "level.h"
 #include <stdio.h>
 #include <SDL.h>
 
@@ -32,6 +33,8 @@ void initBall(float radius, float velocityX, float velocityY);
 void updatePlayer(float deltaTime);
 void drawBall(SDL_Renderer* renderer);
 void launchBall();
+void unlaunchBall();
 void stopPaddle();
+void checkCollisionsWithBricks(Block* block, int num);
 
 #endif

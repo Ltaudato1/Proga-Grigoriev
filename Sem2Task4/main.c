@@ -1,6 +1,7 @@
 #include <SDL.h>
 #include <stdio.h>
 #include "player.h"
+#include "level.h"
 
 int main() {
     SDL_Init(SDL_INIT_VIDEO);
@@ -9,6 +10,7 @@ int main() {
 
     initPaddle(SCREEN_WIDTH / 2 - 50, SCREEN_HEIGHT - 20, 100, 10);
     initBall(10, -300, -300);
+    initLevel();
 
     SDL_Event event;
     int running = 1;
@@ -45,6 +47,9 @@ int main() {
                 case SDLK_RIGHT:
                     stopPaddle();
                     break;
+                case SDLK_ESCAPE:
+                    running = 0;
+                    break;
                 }
             }
         }
@@ -56,6 +61,7 @@ int main() {
 
         drawPaddle(renderer);
         drawBall(renderer);
+        redrawLevel(renderer);
 
         SDL_RenderPresent(renderer); // Обновление экрана
     }

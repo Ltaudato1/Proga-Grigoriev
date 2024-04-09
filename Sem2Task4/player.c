@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <SDL.h>
 #include "general.h"
+#include "level.h"
 
 #define PADDLE_SPEED 400;
 
@@ -56,6 +57,12 @@ void launchBall() {
     launched = true;
 }
 
+void unlaunchBall() {
+    launched = false;
+    ball.velocity.x = -300;
+    ball.velocity.y = -300;
+}
+
 void updatePlayer(float deltaTime) {
     if (paddle.position.x <= 0 && paddle.speed < 0) paddle.speed = 0;
     if (paddle.position.x + paddle.width >= SCREEN_WIDTH && paddle.speed > 0) paddle.speed = 0;
@@ -91,9 +98,7 @@ void updatePlayer(float deltaTime) {
         }
 
         if (ball.currentPosition.y > SCREEN_HEIGHT - ball.radius) {
-            launched = false;
-            ball.velocity.x = -300;
-            ball.velocity.y = -300;
+            unlaunchBall();
         }
     }
     else {
@@ -109,6 +114,54 @@ void drawBall(SDL_Renderer* renderer) {
             if ((x - ball.currentPosition.x) * (x - ball.currentPosition.x) + (y - ball.currentPosition.y) * (y - ball.currentPosition.y) <= ball.radius * ball.radius) {
                 SDL_RenderDrawPoint(renderer, x, y);
             }
+        }
+    }
+}
+
+void checkCollisionsWithBricks(Block* blocks, int num) {
+    for (int i = 0; i < num; ++i) {
+        if (!blocks[i].active) continue;
+
+        // Check by vertical
+        if (ball.currentPosition.x >= blocks[i].position.x 
+            && ball.currentPosition.x <= blocks[i].position.x + blocks[i].width
+            && ball.currentPosition.y - ball.radius <= blocks[i].position.y + blocks[i].height
+            && ball.currentPosition.y - ball.radius >= blocks[i].position.y) {
+            ball.velocity.y *= -1;
+            ball.currentPosition.y += 5;
+            blocks[i].strength--;
+        }
+
+        if (ball.currentPosition.x >= blocks[i].position.x
+            && ball.currentPosition.x <= blocks[i].position.x + blocks[i].width
+            && ball.currentPosition.y + ball.radius >= blocks[i].position.y
+            && ball.currentPosition.y + ball.radius <= blocks[i].position.y + blocks[i].height) {
+            ball.velocity.y *= -1;
+            ball.currentPosition.y -= 5;
+            blocks[i].strength--;
+        }
+
+        // Check by horizontal
+        if (ball.currentPosition.y >= blocks[i].position.y
+            && ball.currentPosition.y <= blocks[i].position.y + blocks[i].height
+            && ball.currentPosition.x - ball.radius <= blocks[i].position.x + blocks[i].width
+            && ball.currentPosition.x - ball.radius >= blocks[i].position.x) {
+            ball.velocity.x *= -1;
+            ball.currentPosition.x += 5;
+            blocks[i].strength--;
+        }
+
+        if (ball.currentPosition.y >= blocks[i].position.y
+            && ball.currentPosition.y <= blocks[i].position.y + blocks[i].height
+            && ball.currentPosition.x + ball.radius >= blocks[i].position.x
+            && ball.currentPosition.x + ball.radius <= blocks[i].position.x + blocks[i].width) {
+            ball.velocity.x *= -1;
+            ball.currentPosition.x += 5;
+            blocks[i].strength--;
+        }
+        
+        if (blocks[i].strength == 0) {
+            killBlock(&blocks[i]);
         }
     }
 }
