@@ -73,10 +73,12 @@ void initBonus(Bonus* bonus) {
     switch (bonus->type) {
     case EXTRA_LIFE:
         paddle.hp++;
+        printf("hp+\n");
         break;
     case PADDLE_PLUS_WIDTH:
         paddle.position.x -= 50;
         paddle.width += 100;
+        printf("width+\n");
     }
     killBonus();
 }
@@ -85,6 +87,7 @@ void bonusCheckCollision(Bonus* bonus) {
     if (bonus->position.x + bonus->width <= paddle.position.x + paddle.width
         && bonus->position.x >= paddle.position.x
         && bonus->position.y + bonus->height > paddle.position.y) {
+        printf("bonus catched\n");
         initBonus(bonus);
     }
     else if (bonus->position.y + bonus->height > SCREEN_HEIGHT) {

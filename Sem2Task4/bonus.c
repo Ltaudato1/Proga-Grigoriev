@@ -23,7 +23,9 @@ void dropBonus(float x, float y) {
 		Type bonuses[NUM_OF_BONUSES];
 		bonuses[0] = EXTRA_LIFE;
 		bonuses[1] = PADDLE_PLUS_WIDTH;
-		bonus.type = bonuses[rand() % 20];
+		bonus.type = bonuses[rand() % NUM_OF_BONUSES];
+
+		printf("bonus dropped\n");
 	}
 }
 
