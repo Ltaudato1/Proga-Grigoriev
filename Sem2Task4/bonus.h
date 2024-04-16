@@ -5,17 +5,22 @@
 
 #include <stdio.h>
 #include "general.h"
+#include <SDL.h>
 
 typedef enum {
-
+	PADDLE_PLUS_WIDTH = 0, EXTRA_LIFE = 1
 } Type;
 
 typedef struct {
 	Vector2D position;
-	Vector2D velocity;
+	float velocityY;
 	int width;
 	int height;
 	Type type;
 } Bonus;
+
+void dropBonus(float x, float y);
+void redrawBonus(SDL_Renderer* renderer, float deltaTime);
+void killBonus();
 
 #endif

@@ -1,5 +1,4 @@
 #include "general.h"
-#include "level.h"
 #include "player.h"
 #include <stdio.h>
 #include <SDL.h>

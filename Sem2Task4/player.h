@@ -5,6 +5,7 @@
 
 #include "general.h"
 #include "level.h"
+#include "bonus.h"
 #include <stdio.h>
 #include <SDL.h>
 
@@ -17,6 +18,7 @@ typedef struct {
     float width;
     float height;
     float speed;
+    int hp;
 } Paddle;
 
 typedef struct {
@@ -36,5 +38,6 @@ void launchBall();
 void unlaunchBall();
 void stopPaddle();
 void checkCollisionsWithBricks(Block* block, int num);
+void bonusCheckCollision(Bonus* bonus);
 
 #endif

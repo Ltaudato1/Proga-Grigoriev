@@ -11,13 +11,4 @@ typedef struct {
 	float y;
 } Vector2D;
 
-typedef struct {
-	float x1, y1;
-	float x2, y2;
-} Object;
-
-typedef char bool;
-#define true 1;
-#define false 0;
-
 #endif

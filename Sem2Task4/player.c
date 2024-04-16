@@ -1,10 +1,13 @@
-#include "player.h"
 #include <stdio.h>
 #include <SDL.h>
 #include "general.h"
 #include "level.h"
+#include "bonus.h"
+#include "player.h"
+#include <stdbool.h>
+#include <stdlib.h>
 
-#define PADDLE_SPEED 400;
+#define PADDLE_SPEED 450
 
 Paddle paddle;
 Ball ball;
@@ -15,13 +18,14 @@ void initPaddle(float x, float y, float width, float height) {
     paddle.position.y = y;
     paddle.width = width;
     paddle.height = height;
+    paddle.hp = 3;
 }
 
 void movePaddle(Direction direction) {
     switch (direction) {
     case LEFT:
         if (paddle.position.x > paddle.speed) {
-            paddle.speed = -PADDLE_SPEED
+            paddle.speed = -PADDLE_SPEED;
         }
         break;
     case RIGHT:
@@ -40,6 +44,29 @@ void drawPaddle(SDL_Renderer* renderer) {
 
 void stopPaddle() {
     paddle.speed = 0;
+}
+
+void initBonus(Bonus* bonus) {
+    switch (bonus->type) {
+    case EXTRA_LIFE:
+        paddle.hp++;
+        break;
+    case PADDLE_PLUS_WIDTH:
+        paddle.position.x -= 50;
+        paddle.width += 100;
+    }
+    killBonus();
+}
+
+void bonusCheckCollision(Bonus* bonus) {
+    if (bonus->position.x + bonus->width <= paddle.position.x + paddle.width
+        && bonus->position.x >= paddle.position.x
+        && bonus->position.y + bonus->height > paddle.position.y) {
+        initBonus(bonus);
+    }
+    else if (bonus->position.y + bonus->height > SCREEN_HEIGHT) {
+        killBonus();
+    }
 }
 
 
@@ -74,7 +101,7 @@ void updatePlayer(float deltaTime) {
         ball.currentPosition.y += ball.velocity.y * deltaTime;
 
         // Check collision with paddle
-        if ( ball.currentPosition.x <= paddle.position.x + paddle.width 
+        if (ball.currentPosition.x <= paddle.position.x + paddle.width 
             && ball.currentPosition.x > paddle.position.x 
             && ball.currentPosition.y > paddle.position.y) {
             ball.velocity.y *= -1;
@@ -82,23 +109,24 @@ void updatePlayer(float deltaTime) {
         }
 
         // Check collision with borders
-        if (ball.currentPosition.y < ball.radius) {
+        else if (ball.currentPosition.y < ball.radius) {
             ball.velocity.y *= -1;
             ball.currentPosition.y += 5;
         }
 
-        if (ball.currentPosition.x < ball.radius) {
+        else if (ball.currentPosition.x < ball.radius) {
             ball.velocity.x *= -1;
             ball.currentPosition.x += 5;
         }
 
-        if (ball.currentPosition.x > SCREEN_WIDTH - ball.radius) {
+        else if (ball.currentPosition.x > SCREEN_WIDTH - ball.radius) {
             ball.velocity.x *= -1;
             ball.currentPosition.x -= 5;
         }
 
-        if (ball.currentPosition.y > SCREEN_HEIGHT - ball.radius) {
+        else if (ball.currentPosition.y > SCREEN_HEIGHT - ball.radius) {
             unlaunchBall();
+            paddle.hp--;
         }
     }
     else {
@@ -132,7 +160,7 @@ void checkCollisionsWithBricks(Block* blocks, int num) {
             blocks[i].strength--;
         }
 
-        if (ball.currentPosition.x >= blocks[i].position.x
+        else if (ball.currentPosition.x >= blocks[i].position.x
             && ball.currentPosition.x <= blocks[i].position.x + blocks[i].width
             && ball.currentPosition.y + ball.radius >= blocks[i].position.y
             && ball.currentPosition.y + ball.radius <= blocks[i].position.y + blocks[i].height) {
@@ -142,7 +170,7 @@ void checkCollisionsWithBricks(Block* blocks, int num) {
         }
 
         // Check by horizontal
-        if (ball.currentPosition.y >= blocks[i].position.y
+        else if (ball.currentPosition.y >= blocks[i].position.y
             && ball.currentPosition.y <= blocks[i].position.y + blocks[i].height
             && ball.currentPosition.x - ball.radius <= blocks[i].position.x + blocks[i].width
             && ball.currentPosition.x - ball.radius >= blocks[i].position.x) {
@@ -151,7 +179,7 @@ void checkCollisionsWithBricks(Block* blocks, int num) {
             blocks[i].strength--;
         }
 
-        if (ball.currentPosition.y >= blocks[i].position.y
+        else if (ball.currentPosition.y >= blocks[i].position.y
             && ball.currentPosition.y <= blocks[i].position.y + blocks[i].height
             && ball.currentPosition.x + ball.radius >= blocks[i].position.x
             && ball.currentPosition.x + ball.radius <= blocks[i].position.x + blocks[i].width) {
@@ -162,6 +190,9 @@ void checkCollisionsWithBricks(Block* blocks, int num) {
         
         if (blocks[i].strength == 0) {
             killBlock(&blocks[i]);
+            if (rand() % 20 < 5) {
+                dropBonus(blocks[i].position.x + blocks[i].width / 2, blocks[i].position.y + blocks[i].height / 2);
+            }
         }
     }
 }

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "player.h"
 #include "level.h"
+#include "bonus.h"
 
 int main() {
     SDL_Init(SDL_INIT_VIDEO);
@@ -62,6 +63,7 @@ int main() {
         drawPaddle(renderer);
         drawBall(renderer);
         redrawLevel(renderer);
+        redrawBonus(renderer, deltaTime);
 
         SDL_RenderPresent(renderer); // Обновление экрана
     }

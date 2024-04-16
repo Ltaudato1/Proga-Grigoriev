@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <SDL.h>
 #include "general.h"
+#include <stdbool.h>
 
 typedef struct {
     Vector2D position;
