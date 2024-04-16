@@ -39,6 +39,12 @@
     <ClCompile Include="bonus.c">
       <Filter>Исходные файлы\game\src</Filter>
     </ClCompile>
+    <ClCompile Include="menu.h">
+      <Filter>Исходные файлы\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.c">
+      <Filter>Исходные файлы\menu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bonus.h">

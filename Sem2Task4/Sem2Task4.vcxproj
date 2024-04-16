@@ -135,6 +135,8 @@
     <ClCompile Include="bonus.c" />
     <ClCompile Include="level.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="menu.c" />
+    <ClCompile Include="menu.h" />
     <ClCompile Include="player.c" />
   </ItemGroup>
   <ItemGroup>

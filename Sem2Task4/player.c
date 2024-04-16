@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <SDL.h>
+#include <SDL_image.h>
 #include "general.h"
 #include "level.h"
 #include "bonus.h"
@@ -12,13 +13,35 @@
 Paddle paddle;
 Ball ball;
 bool launched = false;
+SDL_Texture* heartTexture;
+
+void initIcon(SDL_Renderer* renderer) {
+    int imgFlags = IMG_INIT_PNG;
+    if (!(IMG_Init(imgFlags) & imgFlags)) {
+        printf("SDL_image could not initialize! SDL_image Error: %s\n", IMG_GetError());
+    }
+
+    SDL_Surface* loadedSurface = IMG_Load("heart.png");
+    if (loadedSurface == NULL) {
+        printf("Unable to load image! SDL_image Error: %s\n", IMG_GetError());
+        return;
+    }
+
+    heartTexture = SDL_CreateTextureFromSurface(renderer, loadedSurface);
+    if (heartTexture == NULL) {
+        printf("Unable to create texture from surface! SDL Error: %s\n", SDL_GetError());
+        return;
+    }
+
+    SDL_FreeSurface(loadedSurface);
+}
 
 void initPaddle(float x, float y, float width, float height) {
     paddle.position.x = x;
     paddle.position.y = y;
     paddle.width = width;
     paddle.height = height;
-    paddle.hp = 3;
+    paddle.hp = 2;
 }
 
 void movePaddle(Direction direction) {
@@ -195,4 +218,15 @@ void checkCollisionsWithBricks(Block* blocks, int num) {
             }
         }
     }
+}
+
+void drawLives(SDL_Renderer* renderer) {
+    for (int i = 0; i < paddle.hp; ++i) {
+        SDL_Rect destRect = { 20 + i * 30, 20, 30, 30 };
+        SDL_RenderCopy(renderer, heartTexture, NULL, &destRect);
+    }
+}
+
+bool checkHp() {
+    return (paddle.hp != 0);
 }

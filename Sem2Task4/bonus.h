@@ -8,7 +8,7 @@
 #include <SDL.h>
 
 typedef enum {
-	PADDLE_PLUS_WIDTH = 0, EXTRA_LIFE = 1
+	PADDLE_PLUS_WIDTH, EXTRA_LIFE
 } Type;
 
 typedef struct {

@@ -4,6 +4,9 @@
 #include "player.h"
 #include "bonus.h"
 #include <stdbool.h>
+#include <stdlib.h>
+
+#define NUM_OF_BONUSES 2
 
 bool isFalling = false;
 Bonus bonus;
@@ -16,7 +19,11 @@ void dropBonus(float x, float y) {
 		bonus.height = bonus.width;
 		bonus.velocityY = 400;
 		isFalling = true;
-		
+
+		Type bonuses[NUM_OF_BONUSES];
+		bonuses[0] = EXTRA_LIFE;
+		bonuses[1] = PADDLE_PLUS_WIDTH;
+		bonus.type = bonuses[rand() % 20];
 	}
 }
 

@@ -2,9 +2,11 @@
 #include "player.h"
 #include <stdio.h>
 #include <SDL.h>
+#include <math.h>
 
 #define BLOCKS_ON_ROW 5
 #define LEVELS 3
+#define min(a, b) ((a) < (b) ? (a) : (b))
 
 Level levels[LEVELS];
 int currentLevel = 0;
@@ -15,7 +17,7 @@ void initLevel() {
 	levels[currentLevel - 1].numActive = levels[currentLevel - 1].numBlocks;
 	levels[currentLevel - 1].blocks = (Block*)malloc(sizeof(Block) * levels[currentLevel - 1].numBlocks);
 
-	for (int i = 0; i < currentLevel; ++i) {
+	for (int i = 0; i < min(currentLevel, LEVELS); ++i) {
 		for (int j = 0; j < BLOCKS_ON_ROW; ++j) {
 			levels[currentLevel - 1].blocks[i * BLOCKS_ON_ROW + j].position.x = 0.15 * SCREEN_WIDTH + j * 0.15 * SCREEN_WIDTH;
 			levels[currentLevel - 1].blocks[i * BLOCKS_ON_ROW + j].position.y = 0.15 * SCREEN_HEIGHT + i * 0.125 * SCREEN_HEIGHT;
@@ -27,6 +29,8 @@ void initLevel() {
 			levels[currentLevel - 1].blocks[i * BLOCKS_ON_ROW + j].active = true;
 		}
 	}
+
+	initPaddle(SCREEN_WIDTH / 2 - 50, SCREEN_HEIGHT - 20, 100, 10);
 }
 
 void redrawLevel(SDL_Renderer* renderer) {

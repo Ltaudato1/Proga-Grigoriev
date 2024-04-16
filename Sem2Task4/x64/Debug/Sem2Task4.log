@@ -1,5 +1,8 @@
-﻿  bonus.c
-C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\bonus.c(15,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\bonus.c(26,35): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\bonus.c(26,53): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+﻿  player.c
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(63,44): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(63,63): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(63,73): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(63,87): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(163,41): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\player.c(164,45): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
   Sem2Task4.vcxproj -> C:\Users\Александр\Desktop\Proga-Grigoriev\Sem2Task4\x64\Debug\Sem2Task4.exe
