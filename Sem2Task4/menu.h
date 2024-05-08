@@ -29,6 +29,5 @@ void initMenu();
 void destroyMenu();
 void movePointer(Direction dir);
 void processClick(MenuState* currentState, int* running);
-MenuItem checkButtonClick(int x, int y);
 
 #endif

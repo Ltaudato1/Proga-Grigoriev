@@ -1,0 +1,92 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (task2.5FirstTry.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  invoker.c
+  main.c
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\main.c(14,12): warning C4026: функция объявлена со списком формальных параметров
+  painter.c
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\painter.c(43,2): warning C4013: thickLineRGBA: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\painter.c(55,26): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\painter.c(56,26): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  saver.c
+  SDL2_gfxPrimitives.c
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(1698,13): warning C4028: формальный параметр 1 отличается от объявления
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(1810,25): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(1811,33): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(1889,33): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(3811,21): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(3812,21): warning C4244: функция: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4037,25): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4038,32): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4149,25): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4150,32): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4433,36): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4434,36): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4437,67): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4438,50): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4445,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4446,22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4497,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4502,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4503,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4509,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4517,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4522,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4523,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4529,40): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4582,39): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4587,39): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4588,39): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4594,39): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4692,24): warning C4244: =: преобразование "double" в "Sint16", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4693,24): warning C4244: =: преобразование "double" в "Sint16", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4700,18): warning C4244: =: преобразование "double" в "Sint16", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4701,18): warning C4244: =: преобразование "double" в "Sint16", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4747,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4748,20): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4763,48): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4763,64): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4768,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4777,67): warning C4244: функция: преобразование "double" в "Uint8", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4781,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4790,67): warning C4244: функция: преобразование "double" в "Uint8", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4798,10): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4799,20): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4814,52): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4814,68): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4819,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4828,67): warning C4244: функция: преобразование "double" в "Uint8", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4832,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4841,67): warning C4244: функция: преобразование "double" в "Uint8", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4931,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4933,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4939,40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4940,18): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4944,40): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4945,18): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4990,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4991,18): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4996,21): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(4997,18): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5010,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5011,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5020,43): warning C4244: функция: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5026,37): warning C4244: функция: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5028,11): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5049,17): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5056,29): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5072,47): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5072,62): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5076,61): warning C4244: функция: преобразование "float" в "Uint8", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5077,52): warning C4244: функция: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5081,39): warning C4244: функция: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5052,20): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5129,42): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5130,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5132,20): warning C4305: +=: усечение из "double" в "float"
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5135,41): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5205,42): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5206,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5208,20): warning C4305: +=: усечение из "double" в "float"
+C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\task2.5FirstTry\SDL2_gfxPrimitives.c(5211,13): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  SDL2_rotozoom.c
+  Создание кода...
+  task2.5FirstTry.vcxproj -> C:\Users\Александр\Desktop\C++ stuff\task2.5FirstTry\x64\Debug\Sem2Task5.exe

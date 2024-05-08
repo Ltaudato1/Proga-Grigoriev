@@ -61,23 +61,7 @@ int main() {
                 }
             }
             else if (currentState == MENU) {
-                if (event.type == SDL_MOUSEBUTTONDOWN && event.button.button == SDL_BUTTON_LEFT) {
-                    int x = event.button.x;
-                    int y = event.button.y;
-                    switch (checkButtonClick(x, y)) {
-                    case START:
-                        currentState = GAME;
-                        destroyMenu();
-                        break;
-                    case QUIT:
-                        running = 0;
-                        destroyMenu();
-                        break;
-                    default:
-                        break;
-                    }
-                }
-                else if (event.type == SDL_KEYDOWN) {
+                if (event.type == SDL_KEYDOWN) {
                     switch (event.key.keysym.sym) {
                     case SDLK_UP:
                         movePointer(UP);

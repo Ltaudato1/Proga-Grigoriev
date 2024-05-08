@@ -57,17 +57,6 @@ void drawMenu(SDL_Renderer* renderer) {
 
 
 
-MenuItem checkButtonClick(int x, int y) {
-    if (x > SCREEN_WIDTH / 2 - 50 && x < SCREEN_WIDTH / 2 + 50 && y > 200 && y < 250) {
-        return START;
-    }
-
-    else if (x > SCREEN_WIDTH / 2 - 50 && x < SCREEN_WIDTH / 2 + 50 && y > 300 && y < 350) {
-        return QUIT;
-    }
-    return -1;
-}
-
 void processClick(MenuState* currentState, int* running) {
     switch (buttons[currentButton]) {
     case START:
